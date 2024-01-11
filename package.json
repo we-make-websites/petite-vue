@@ -1,38 +1,26 @@
 {
   "name": "@we-make-websites/petite-vue",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "5kb subset of Vue optimized for progressive enhancement",
+  "author": "Evan You + We Make Websites",
+  "homepage": "https://github.com/vuejs/petite-vue#readme",
+  "repository": "https://github.com/we-make-websites/petite-vue",
+  "license": "MIT",
+  "private": true,
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "dist/petite-vue.umd.js",
-  "unpkg": "dist/petite-vue.iife.js",
-  "jsdelivr": "dist/petite-vue.iife.js",
-  "module": "./dist/petite-vue.es.js",
   "exports": {
     ".": {
       "import": "./dist/petite-vue.es.js",
       "require": "./dist/petite-vue.umd.js"
     }
   },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build && tsc --emitDeclarationOnly"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vuejs/petite-vue.git"
-  },
-  "keywords": [
-    "vue"
-  ],
-  "author": "Evan You",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/vuejs/petite-vue/discussions"
-  },
-  "homepage": "https://github.com/vuejs/petite-vue#readme",
+  "main": "dist/petite-vue.umd.js",
+  "unpkg": "dist/petite-vue.iife.js",
+  "jsdelivr": "dist/petite-vue.iife.js",
+  "module": "./dist/petite-vue.es.js",
   "devDependencies": {
     "@vue/reactivity": "^3.4.0",
     "@vue/shared": "^3.4.0",
@@ -43,5 +31,9 @@
     "semver": "^7.5.4",
     "typescript": "^5.3.3",
     "vite": "^5.0.10"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc --emitDeclarationOnly"
   }
 }
