@@ -6,7 +6,6 @@
   "homepage": "https://github.com/vuejs/petite-vue#readme",
   "repository": "https://github.com/we-make-websites/petite-vue",
   "license": "MIT",
-  "private": true,
   "type": "module",
   "files": [
     "dist"
